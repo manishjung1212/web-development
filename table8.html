@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        body{
+            background-color:blue; text-align: center; 
+            background-image: url(photo.avif);
+            background-repeat: no-repeat;
+
+            background-size: cover;
+            
+        }
+        div.main{
+            background-color: red;
+
+        }
+        a:link {
+            color: red;
+        }
+        a:visited{
+            color:green;
+            position: fixed;
+        }
+        a:hover{
+            color: black;
+            
+        }
+        #division1{
+            height: 100px; 
+            position: absolute; 
+            width: 100px; 
+            background-color: blue; 
+            left: 100px; 
+            z-index: 5
+        }
+        #division2{
+            height: 100px; 
+            position: relative; 
+            width: 100px; 
+            background-color:green; 
+            left: 100px; 
+            z-index: 6
+            
+        }
+        #division3 {
+            height: 50px; 
+            position: absolute; 
+            width: 50px; 
+            background-color:yellow; 
+            left: 50px; 
+            z-index: 6
+        }
+        #division4{
+            height: 50px; 
+            position: absolute; 
+            width: 50px; 
+            background-color:red; 
+            left: 20px; 
+            z-index: 6
+            
+        }
+        .float{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-color: green;
+            float: right ;
+        }
+        #parent {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap:8px;
+            height: 100px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main bca" style="background-color:white; height: 150px; padding: 30px 60px;margin: 20px 50px; border: 40px 60px; text-align: center;
+    font-style: italic; font-variant: small-caps; ">
+        <p id="test" style="color:red">This is a paragraph</p>
+        <p id="test" style="color:blue"><pre>Lorem ipsum dolor sit amet, consectetur
+             adipisicing elit. Officia, 
+            quae dignissimos voluptate repellendus dolor eveniet quisquam rerum numquam
+             odit totam qui 
+            inventore modi corporis ratione fuga obcaecati nisi, est adipisci!</pre></p>
+            <a href="@#$$">this is tag</a><br>
+            <a href="@#$2$12">that was  tag</a>
+        <p class="name"></p>
+    </div>
+    <div id="division1"></div>
+    <div id="division2"></div>
+    <div id="division3"></div>
+    <div id="division4"></div>
+    <div class="float"></div>
+    <div id="parent"></div>
+    
+</body>
+</html>
