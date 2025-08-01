@@ -5,15 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+             body{
+            background-color:brown; text-align: center; 
+            /* background-image: url(photo.avif); */
+            background-repeat: no-repeat;
+
+            background-size: cover;
+            
+        }
+        div.main{
+            background-color: red;
+
+        }
+        a:link {
+            color: red;
+        }
+        a:visited{
+            color:green;
+            position: fixed;
+        }
+        a:hover{
+            color: black;
+            
+        }
+        #division1{
+            height: 100px; 
+            position: absolute; 
+            width: 100px; 
+            background-color: blue; 
+            left: 100px; 
+            z-index: 5
+        }
+        #division2{
+            height: 100px; 
+            position: relative; 
+            width: 100px; 
+            background-color:green; 
+            left: 100px; 
+            z-index: 6
+            
+        }
+        #division3 {
+            height: 50px; 
+            position: absolute; 
+            width: 50px; 
+            background-color:yellow; 
+            left: 50px; 
+            z-index: 6
+        }
+        #division4{
+            height: 50px; 
+            position: absolute; 
+            width: 50px; 
+            background-color:red; 
+            left: 20px; 
+            z-index: 6
+            
+        }
+        .float{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-color: green;
+            float: right ;
+        }
+        #parent {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap:8px;
+            height: 100px;
+
+        }
+       
+</style>
 <body>
     <h3>User information form</h3>
-    <form>
+    <form>x
     <fieldset>
         <legend>personal detail
         </legend>
         <label for="name">name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+        <input type="text" id="name" name="name"  onkeypress="showChange()"><br><br>
+        <span class="error" id="error-name"></span>
         <label for="email">email:</label><br>
+        <input type="text" id="email" name="name"  onkeypress="checkEmail()"><br><br>
+        <span class="error" id="error-email"></span>
         <input type="email" id="ok" name="ok" required><br><br>
         date of birth: <br><input type="datetime-local" name="" id=""><br><br>
         
@@ -29,6 +107,6 @@
     </fieldset>
     <button>Submit</button>
     </form>
-
+<script src="javascript.js"></script>
 </body>
 </html>
